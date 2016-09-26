@@ -1,6 +1,6 @@
 Name:           chrome-gnome-shell
 Version:        7.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        GNOME Shell integration for Chrome
 License:        GPL-3.0+
 Group:          System/GUI/GNOME
@@ -26,7 +26,6 @@ Web extension for Google Chrome/Chromium, Vivaldi, Opera (and other WebExtension
 
 %build
 %cmake -DCMAKE_INSTALL_PREFIX=%{_prefix} -DBUILD_EXTENSION=OFF
-%make_build
 
 %install
 pushd build
@@ -55,5 +54,7 @@ popd
 %{python_sitelib}/chrome_gnome_shell-*.egg-info
 
 %changelog
+* Sun Sep 26 2016 Raúl Romero García <raul@bgta.net> - 7-2.R
+- Removed unnecessary build step.
 * Sun Sep 25 2016 Raúl Romero García <raul@bgta.net> - 7-1.R
 - Initial package
