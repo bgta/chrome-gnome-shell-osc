@@ -1,6 +1,6 @@
 Name:           chrome-gnome-shell
 Version:        7.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        GNOME Shell integration for Chrome
 License:        GPL-3.0+
 Group:          System/GUI/GNOME
@@ -36,6 +36,7 @@ popd
 %files
 %doc README.md
 %license LICENSE
+%dir %{_datadir}/licenses
 %{_bindir}/chrome-gnome-shell
 %dir %{_sysconfdir}/chromium
 %dir %{_sysconfdir}/chromium/native-messaging-hosts
@@ -54,7 +55,9 @@ popd
 %{python_sitelib}/chrome_gnome_shell-*.egg-info
 
 %changelog
-* Sun Sep 26 2016 Raúl Romero García <raul@bgta.net> - 7-2.R
+* Sat Oct 01 2016 Raúl Romero García <raul@bgta.net> - 7.1-3.R
+- Added liceses directory to %files step. (Try to fix build error on openSUSE_Leap_42.1).
+* Sun Sep 26 2016 Raúl Romero García <raul@bgta.net> - 7.1-2.R
 - Removed unnecessary build step.
 * Sun Sep 25 2016 Raúl Romero García <raul@bgta.net> - 7-1.R
 - Initial package
