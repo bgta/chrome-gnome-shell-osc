@@ -2,11 +2,11 @@
   <service name="download_url">
     <param name="protocol">https</param>
     <param name="host">git.gnome.org</param>
-    <param name="path">/browse/chrome-gnome-shell/snapshot/chrome-gnome-shell-7.2.tar.xz</param>
+    <param name="path">/browse/chrome-gnome-shell/snapshot/chrome-gnome-shell-7.2.1.tar.xz</param>
   </service>
   <service name="verify_file">
-    <param name="file">_service:download_url:chrome-gnome-shell-7.2.tar.xz</param>
+    <param name="file">_service:download_url:chrome-gnome-shell-7.2.1.tar.xz</param>
     <param name="verifier">sha256</param>
-    <param name="checksum">b86a5df45c4e44d1179806b0cf385a3c0d7a85faaafe4a7f0bd8779c86459ef5</param>
+    <param name="checksum">e3ab2bc7ed8301ba95da7517ae9c5472becee8c1103df48fe173a75094a20b49</param>
   </service>
 </services>
