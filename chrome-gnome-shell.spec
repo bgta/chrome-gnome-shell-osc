@@ -1,5 +1,5 @@
 Name:           chrome-gnome-shell
-Version:        7.2
+Version:        7.2.1
 Release:        4%{?dist}
 Summary:        GNOME Shell integration for Chrome
 License:        GPL-3.0+
@@ -58,6 +58,8 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/man/man1/%{name}.1
 %{python_sitelib}/chrome_gnome_shell-*.egg-info
 
 %changelog
+* Tue Dec 27 2016 Raúl Romero García <raul@bgta.net> - 7.2.1-1.R
+- Updated to version 7.2.1
 * Sat Oct 01 2016 Raúl Romero García <raul@bgta.net> - 7.1-4.R
 - Added licese file as %%doc. (Try to fix build error on openSUSE_Leap_42.1).
 - Added man page.
