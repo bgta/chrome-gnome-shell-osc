@@ -1,5 +1,5 @@
 Name:           chrome-gnome-shell
-Version:        7.2.1
+Version:        8
 Release:        4%{?dist}
 Summary:        GNOME Shell integration for Chrome
 License:        GPL-3.0+
