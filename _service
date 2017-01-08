@@ -1,7 +1,0 @@
-<services>
-  <service name="download_url">
-    <param name="protocol">https</param>
-    <param name="host">git.gnome.org</param>
-    <param name="path">/browse/chrome-gnome-shell/snapshot/chrome-gnome-shell-8.tar.xz</param>
-  </service>
-</services>
