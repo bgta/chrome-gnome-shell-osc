@@ -1,5 +1,5 @@
 Name:           chrome-gnome-shell
-Version:        8
+Version:        8.1
 Release:        4%{?dist}
 Summary:        GNOME Shell integration for Chrome
 License:        GPL-3.0+
@@ -75,6 +75,8 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/man/man1/%{name}.1
 
 
 %changelog
+* Mon Feb 13 2017 Raúl Romero García <raul@bgta.net> - 8.1-1.R
+- Updated to version 8.1
 * Sun Jan 8 2017 Raúl Romero García <raul@bgta.net> - 8-1.R
 - Updated to version 8
 * Tue Dec 27 2016 Raúl Romero García <raul@bgta.net> - 7.2.1-1.R
